@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('api/shows', 'ShowController@index');
+
 App::missing(function($exception)
 {
     return File::get(public_path() . '/angular.html');
