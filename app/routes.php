@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function()
+App::missing(function($exception)
 {
-	return View::make('hello');
+    return File::get(public_path() . '/angular.html');
 });
